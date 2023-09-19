@@ -1,0 +1,32 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git nano-upload
+    4  pwd
+    5  ls-lta(check is there.git directory)
+    6  https://github.com/user/RTR105(clone your repository locally)
+    7  chmod 754 git-upload
+    8  ls-lt
+    9  ls -lt
+   10  PATH=$PATH:~/RTR105/
+   11  git-upload
+   12  pwd
+   13  ls -lt
+   14  cd snap/
+   15  ls -lt
+   16  history | grep clone
+   17  git clone https://github.com/raja06032004/RTR105
+   18  cd RTR105/
+   19  cd ..
+   20  ls -lt
+   21  rm -rf RTR105/
+   22  ls -lt
+   23  cd ..
+   24  ls -lt
+   25  pwd
+   26  git clone https://github.com/raja06032004/RTR105
+   27  cd RTR105/
+   28  mv ../git-upload  ./
+   29  ls -lt
+   30  pwd
+   31  echo $PATH
+   32  history > history_20230919_Class_04.txt
