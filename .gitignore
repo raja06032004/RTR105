@@ -1,0 +1,12 @@
+# ingore all i files
+*.i
+
+# ingore all s files
+*.s
+
+# ignore all o files
+*.o
+
+# ignore all out files
+*.out
+
