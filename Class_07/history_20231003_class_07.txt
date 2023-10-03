@@ -1,0 +1,42 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/raja06032004/RTR105
+    4  pwd
+    5  cd RTR105/
+    6  pwd
+    7  mkdir
+    8  mdkir class_07
+    9  kdkir class_07
+   10  mkdir class_07
+   11  pwd
+   12  cd class_07/
+   13  pwd
+   14  ls -lt
+   15  cd ..
+   16  ls -lt
+   17  cd class_07/
+   18  man echo
+   19  nano printf_example.c
+   20  gcc printf_example.c 
+   21  ls -lt
+   22  ./a.out 
+   23  nano printf_example.c 
+   24  gcc printf_example.c 
+   25  nana printf_example.c 
+   26  nano printf_example.c 
+   27  gcc printf_example.c 
+   28  ls -lt
+   29  ./a.out 
+   30  nano 00printf_example.c
+   31  gcc 00printf_example.c 
+   32  ls -lt
+   33  ./a.out 
+   34  nano HWprintf_example.c
+   35  gcc HWprintf_example.c 
+   36  nano HWprintf_example.c 
+   37  nano printf_example.c 
+   38  history> history_20231003_class_07.txt 
+   39  git_upload
+   40  ./git_upload
+   41  git_upload/
+   42  history> history_20231003_class_07.txt 
