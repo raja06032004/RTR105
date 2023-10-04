@@ -1,0 +1,30 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  pwd
+    4  git clone https://github.com/raja06032004/RTR105
+    5  cd RTR105/
+    6  pwd
+    7  mkdir Class_08
+    8  cd Class_08/
+    9  nano variable.c
+   10  gcc variable.c 
+   11  nano variable.c 
+   12  gcc variable.c 
+   13  ls -lt
+   14  ./a.out 
+   15  nano variable.c 
+   16  gcc variable.c 
+   17  ./a.out 
+   18  nano variable.c 
+   19  gcc variable.c 
+   20  ./a.out 
+   21  nano variable.c 
+   22  gcc variable.c 
+   23  ls -lt
+   24  ./a.out 
+   25  nano variable.c 
+   26  gcc variable.c 
+   27  nano variable.c 
+   28  gcc variable.c 
+   29  ./a.out 
+   30  history > history_20231004_class_08.txt
