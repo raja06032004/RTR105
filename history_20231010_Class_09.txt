@@ -1,0 +1,30 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/raja06032004/RTR105
+    4  pwd
+    5  cd RTR105/
+    6  mkdir Class_09
+    7  cd Class_09/
+    8  ls -lt
+    9  cd ..
+   10  ls -lt
+   11  cd Class_09/
+   12  nano operations.c
+   13  gcc operations.c 
+   14  nano operations.c
+   15  gcc operations.c 
+   16  nano operations.c
+   17  gcc operations.c 
+   18  nano operations.c
+   19  gcc operations.c 
+   20  nano operations.c
+   21  gcc operations.c 
+   22  ls -lt
+   23  ./a.out 
+   24  nano operations.c
+   25  gcc operations.c 
+   26  ls -lt
+   27  ./a.out 
+   28  history> history_20231010_Class_09.txt
+   29  cd ..
+   30  history> history_20231010_Class_09.txt
