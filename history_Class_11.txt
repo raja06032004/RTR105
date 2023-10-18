@@ -1,0 +1,45 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/raja06032004/RTR105
+    4  ls -lt
+    5  cd RTR105/
+    6  mkdir Class_11
+    7  cd Class_11/
+    8  nano while_char.c
+    9  gcc while_char.c 
+   10  ./a.out 
+   11  nano while_char.c
+   12  gcc while_char.c 
+   13  ./a.out 
+   14  nano while_rand.c
+   15  gcc while_rand.c 
+   16  ./a.out 
+   17  nano Function_V1.c
+   18  gcc Function_V1.c 
+   19  ./a.out 
+   20  nana while_rand.c 
+   21  nano while_rand.c 
+   22  nano Function_V1.c
+   23  nano caling_function.c
+   24  nano Function_V1.c
+   25  nano while_char.c
+   26  nano caling_function.c
+   27  gcc caling_function.c 
+   28  nano while_char.c
+   29  gcc caling_function.c 
+   30  nano caling_function.c
+   31  gcc caling_function.c 
+   32  nano while_char.c
+   33  nano caling_function.c
+   34  gcc caling_function.c 
+   35  nano caling_function.c
+   36  gcc caling_function.c 
+   37  nano caling_function.c
+   38  gcc caling_function.c 
+   39  nano caling_function.c
+   40  gcc caling_function.c 
+   41  nano caling_function.c
+   42  cd ..
+   43  ano git-upload 
+   44  nano git-upload 
+   45  history>history_Class_11.txt
