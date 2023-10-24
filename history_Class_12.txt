@@ -1,0 +1,50 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/raja06032004/RTR105
+    4  pwd
+    5  cd RTR105/
+    6  pwd
+    7  ls -lt
+    8  mkdir Class_12
+    9  cd Class_12/
+   10  nano foo.h.c
+   11  nano foo.c
+   12  nano main.c
+   13  nano foo.h
+   14  gcc -Wall -c foo.c
+   15  gcc -Wall -c main.c
+   16  gcc -o testprogram foo.o main.o
+   17  ls -lt
+   18  ./testprogram 
+   19  nano main.c
+   20  gcc -Wall -c main.c
+   21  gcc -o testprogram foo.o main.o
+   22  ./testprogram 
+   23  nano foo.c
+   24  nano foo.h
+   25  gcc -Wall -c foo.c
+   26  nano foo.h
+   27  nano foo.c
+   28  gcc -Wall -c foo.c
+   29  gcc -o testprogram foo.o main.o
+   30  ./testprogram 
+   31  ls -lt
+   32  nano foo.c
+   33  gcc -Wall -c foo.c
+   34  nano foo.c
+   35  gcc -Wall -c foo.c
+   36  nano foo.c
+   37  gcc -Wall -c foo.c
+   38  nano foo.c
+   39  gcc -Wall -c foo.c
+   40  gcc -o testprogram foo.o main.o
+   41  ./testprogram 
+   42  nano main.c
+   43  nano foo.c
+   44  nano arrays.c
+   45  gcc arrays.c 
+   46  ls -lt
+   47  ./a.out 
+   48  nano arrays.c
+   49  cd ..
+   50  history>history_Class_12.txt
