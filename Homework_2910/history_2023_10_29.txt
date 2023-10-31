@@ -1,0 +1,74 @@
+    1  sudo apt update
+    2  kernel header
+    3  sudo apt install linux-headers-$(uname -r)
+    4  ls
+    5  chmod +x VBoxLinuxAdditions.run
+    6  sudo ./VBoxLinuxAdditions.run
+    7  chmod +x VBoxLinuxAdditions.run
+    8  sudo ./VBoxLinuxAdditions.run
+    9  sudo reboot now
+   10  sudo apt instal linux
+   11  sudo apt install Linux-header-$(uname -r)
+   12  pwd
+   13  git clone https://github.com/raja06032004/RTR105~
+   14  git clone
+   15  git clone https://github.com/raja06032004/RTR105
+   16  pwd
+   17  git clone https://github.com/raja06032004/RTR105/
+   18  cd ..
+   19  cd rajaganapathy007/
+   20  cd RTR105/
+   21  ls -lt
+   22  cd Class_07/
+   23  nano printf_example.c 
+   24  ls -lt
+   25  cd ..
+   26  mkdir Home 
+   27  mkdir Home _01
+   28  cd Home/
+   29  ls -lt
+   30  cd ..
+   31  ls -lt
+   32  mkdir Test _03
+   33  cd Test/
+   34  cd ..
+   35  mkdir Test_03
+   36  cd Test_03/
+   37  nano test.c
+   38  cat test.c 
+   39  ls -lt
+   40  gcc test.c 
+   41  gcc test.c -o test.c 
+   42  sudo apt install gcc
+   43  apt-get update
+   44  --fix missing
+   45  --fix-missing
+   46  --fix-missing?
+   47  with --fix-missing?
+   48  gcc test.c -o test.c 
+   49  sudo apt install gcc
+   50  apt-get update
+   51  sudo apt install gcc
+   52  gcc test.c 
+   53  gcc test.c -o test.c cd ..
+   54  cd ..
+   55  sudo apt install gcc
+   56  cd ..
+   57  sudo apt install gcc
+   58  apt-get update
+   59  --fix-missing?
+   60  sudo apt update
+   61  apt list --upgradable
+   62  sudo apt update
+   63  apt list --upgradable
+   64  sudo apt install gcc
+   65  pwd
+   66  RTR105/
+   67  cd RTR105/
+   68  cd Homework_2910/
+   69  nano Sums.c 
+   70  gcc Sums.c 
+   71  ls -lt
+   72  ./a.out 
+   73  nano Sums.c 
+   74  history>history_2023_10_29.txt
