@@ -1,0 +1,32 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  GIT CLONE https://github.com/raja06032004/RTR105
+    4  git clone https://github.com/raja06032004/RTR105
+    5  cd RTR105/
+    6  mkdir Class_15
+    7  cd Class_15/
+    8  nano sinv.c 
+    9  gcc sinv.c -em
+   10  nano sinv.c 
+   11  gcc sinv.c -em
+   12  nano sinv.c 
+   13  gcc sinv.c -em
+   14  nano sinv.c 
+   15  gcc sinv.c -em
+   16  nano sinv.c 
+   17  gcc sinv.c -em
+   18  nano sinv.c 
+   19  gcc sinv.c -em
+   20  nano sinv.c 
+   21  gcc sinv.c -em
+   22  nano sinv.c 
+   23  gcc sinv.c -em
+   24  -lm
+   25  nano sinv.c 
+   26  gcc sinv.c -em
+   27  nano sinv.c 
+   28  gcc sinv.c -lm
+   29  ./a.out 
+   30  nano sinv.c 
+   31  gnuplot 
+   32  history>history_Class_15.txt
