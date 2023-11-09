@@ -1,29 +1,24 @@
-#include <stdio.h>
+#include<stdio.h>     
+#include<stdint.h>     
+#include<math.h>        
+int main()       
+{
+printf("Enter a natural number: ");
+  int a;      
+  scanf("%u", &a);
 
-int main() {
-    char num;
-    
-    // Prompt the user to enter a natural number
-    printf("Enter a natural number: ");
-    scanf("%hhd", &num);
+  printf("Number: 0x%X\n", a);
+  
+  printf("%d", ((a & 0x80) >> 7));
+  printf("%d", ((a & 0x40) >> 6));
+  printf("%d", ((a & 0x20) >> 5));
+  printf("%d", ((a & 0x10) >> 4));
+  printf("%d", ((a & 0x08) >> 3));
+  printf("%d", ((a & 0x04) >> 2));
+  printf("%d", ((a & 0x02) >> 1));
+  printf("%d", ((a & 0x01) >> 0));
 
-    if (num < 0) {
-        printf("Please enter a non-negative number.\n");
-        return 1;
-    }
-
-    printf("Binary representation of %d: ", num);
-
-    // Size of char in bits (usually 8)
-    int bits = sizeof(char) * 8;
-
-    // Use bitwise shift and mask to print the binary representation
-    for (int i = bits - 1; i >= 0; i--) {
-        char bit = (num >> i) & 1;
-        printf("%d", bit);
-    }
-
-    printf("\n");
-
-    return 0;
-}
+  printf("\n");
+  
+  return 0;      
+}      
