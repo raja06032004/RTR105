@@ -1,0 +1,26 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/raja06032004/RTR105
+    4  ls -lt
+    5  cd RTR105/
+    6  mkdir Class_16
+    7  cd Class_18
+    8  cd Class_16
+    9  nano bisection.c
+   10  gcc bisection.c 
+   11  nano bisection.c
+   12  gcc bisection.c 
+   13  nano bisection.c
+   14  gcc bisection.c 
+   15  nano bisection.c
+   16  gcc bisection.c 
+   17  nano bisection.c
+   18  gcc bisection.c 
+   19  nano bisection.c
+   20  gcc bisection.c 
+   21  nano bisection.c
+   22  gcc bisection.c -lm
+   23  nano bisection.c
+   24  gcc bisection.c -lm
+   25  ./a.out 
+   26  history>history_Class_16.txt
