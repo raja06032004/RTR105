@@ -54,8 +54,7 @@ int main() {
         printf("Invalid input for order. Please enter 'A' or 'D'.");
         return 1;
     }
-
-    // Output the sorted sequence
+    
     printf("Sorted sequence based on your choice: %c%c%c\n", letter1, letter2, letter3);
 
     return 0;
