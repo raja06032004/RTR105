@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+
+
+// Function with arguments and with return
+
+int calculateProduct(int a, int b) {
+
+    return a * b; // Calculates product of a and b
+
+}
+
+
+
+int main() {
+
+    int x, y, product;
+
+
+
+    printf("Enter the x integer: ");
+
+    scanf("%d", &x);
+
+
+
+    printf("Enter the y integer: ");
+
+    scanf("%d", &y);
+
+
+
+    // Call the function with arguments and with return
+
+    product = calculateProduct(x, y);
+
+    printf("Product of %d and %d is: %d\n", x, y, product);
+
+    return 0;
+
+}
