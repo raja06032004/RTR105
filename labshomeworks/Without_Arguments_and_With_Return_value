@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include <stdlib.h>
+
+#include <time.h>
+
+
+
+// Function without arguments and with return
+
+int generateRandomNumber() {
+
+    srand(time(NULL));
+
+    return rand() % 100; // Returns a random number between 0 and 99
+
+}
+
+
+
+int main() {
+
+    int randomNumber;
+
+
+
+    // Call the function without arguments and with return
+
+    randomNumber = generateRandomNumber();
+
+    printf("Random number generated: %d\n", randomNumber);
+
+    return 0;
+
+}
