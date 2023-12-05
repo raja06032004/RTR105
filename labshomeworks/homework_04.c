@@ -1,21 +1,15 @@
+
 #include <stdio.h>
 
-
-void calculateFactorial(char dataType, double number) {
-
-    // Initializing variables based on user's selected data type
-
-    char charResult = 1;
-
+void calculateFactorial(char dataType, double number)
+  {
+   char charResult = 1;
     int intResult = 1;
-
     long long longLongResult = 1;
-
     int i = 1;
 
 
-
-    // Checking user's selected data type and calculating factorial accordingly
+    // Checking user's selected data type and calculating factorial accordingl
 
     switch (dataType) {
 
