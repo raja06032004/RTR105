@@ -37,20 +37,14 @@ void calculateFactorial(char dataType, double number) {
         if (longLongResult == 0)
        {
            printf("Factorial value exceeds range for long long data type.\n");
-
          return;
          }
             }
-
             printf("Factorial of %.0lf using long long data type: %lld\n", number, longLongResult);
-
           break;
-
         default:
             printf("Invalid data type selected.\n");
-
     }
-
 }
 
 
@@ -59,12 +53,9 @@ int main() {
     char dataType;
     printf("Enter a decimal number: ");
     scanf("%lf", &userInput);
-
     printf("Select data type - char (c), int (i), or long long (l): ");
     scanf(" %c", &dataType);
-
     calculateFactorial(dataType, userInput);
-
     return 0;
-
 }
+	

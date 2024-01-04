@@ -7,16 +7,12 @@ void calculateFactorial(char dataType, double number)
     int intResult = 1;
     long long longLongResult = 1;
     int i = 1;
-
-
-    // Checking user's selected data type and calculating factorial accordingl
     switch (dataType) {
     case 'c':
     while (i <= number) {
          charResult *= i;
     if (charResult < 0) {
         printf("Factorial value exceeds range for char data type.\n");
-
          return;
                 }
                 i++;
@@ -36,14 +32,11 @@ void calculateFactorial(char dataType, double number)
                 i++;
 
             }
-
             printf("Factorial of %.0lf using int data type: %d\n", number, intResult);
        break;
-
         case 'l':
         while (i <= number) {
                longLongResult *= i;
-
          if (longLongResult < 0) {
              printf("Factorial value exceeds range for long long data type.\n");
       return;
