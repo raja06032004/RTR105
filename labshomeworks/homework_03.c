@@ -1,69 +1,96 @@
-#include <stdio.h>
+include <stdio.h>
+
+
+
+void sortNumbers(int *a, int *b, int *c) {
+
+    int *min, swap;
+
+
+
+    // Sort using selection sort
+
+    min = a;
+
+    if (*b < *min) {
+
+        min = b;
+
+    }
+
+    if (*c < *min) {
+
+        min = c;
+
+    }
+
+
+
+    swap = *a;
+
+    *a = *min;
+
+    *min = swap;
+
+
+
+    if (*b > *c) {
+
+        swap = *b;
+
+        *b = *c;
+
+        *c = swap;
+
+    }
+
+}
+
+
 
 int main() {
-    int n1, n2, n3;
+
+    int a, b, c;
+
     char order;
 
-    printf("Enter the first decimal number: ");
-    scanf("%d", &n1);
-    printf("Enter the second decimal number: ");
-    scanf("%d", &n2);
-    printf("Enter the third decimal number: ");
-    scanf("%d", &n3);
 
-    // Asking for the order of sequence
-    printf("Enter 'a' for ascending order or 'd' for descending order: ");
+
+    printf("Enter the first number: ");
+
+    scanf("%d", &a);
+
+    printf("Enter the second number: ");
+
+    scanf("%d", &b);
+
+    printf("Enter the third number: ");
+
+    scanf("%d", &c);
+
+    printf("Enter A for ascending order or D for descending order:");
+
     scanf(" %c", &order);
 
-    if (order == 'a') {
-        if (n1 > n2)
-        {
-            int temp = n1;
-            n1 = n2;
-            n2 = temp;
-        }
 
-        if (n2 > n3)
-        {
-            int temp = n2;
-            n2 = n3;
-            n3 = temp;
-        }
-        if (n1 > n2)
-        {
-            int temp = n1;
-            n1 = n2;
-            n2 = temp;
-        }
-    }
-      else if (order == 'd') {
-        if (n1 < n2)
-        {
-            int temp = n1;
-            n1 = n2;
-            n2 = temp;
-        }
-        if (n2 < n3)
-        {
-            int temp = n2;
-            n2 = n3;
-            n3 = temp;
-        }
-        if (n1 < n2)
-        {
-            int temp = n1;
-            n1 = n2;
-            n2 = temp;
-        }
-    }
- else {
-        printf("Invalid input for order! Please enter 'a' or 'd'.\n");
-        return 1;
+
+    sortNumbers(&a, &b, &c);
+
+
+
+    if (order == 'A' || order == 'a') {
+     printf("The sorted sequence is: %d %d %d\n", a, b, c);
+
+    } else if (order == 'D' || order == 'd') {
+
+        printf("The sorted sequence is: %d %d %d\n", c, b, a);
+
     }
 
-    // Outputting the sorted sequence
-    printf("Sorted sequence based on your choice: %d, %d, %d\n", n1, n2, n3);
+
 
     return 0;
+
 }
+
 
