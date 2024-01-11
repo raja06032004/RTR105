@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 
 
 
@@ -76,10 +76,9 @@ int main() {
 
     sortNumbers(&a, &b, &c);
 
-
-
     if (order == 'A' || order == 'a') {
-     printf("The sorted sequence is: %d %d %d\n", a, b, c);
+
+        printf("The sorted sequence is: %d %d %d\n", a, b, c);
 
     } else if (order == 'D' || order == 'd') {
 
@@ -92,5 +91,4 @@ int main() {
     return 0;
 
 }
-
 
