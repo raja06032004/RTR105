@@ -36,11 +36,14 @@ int main() {
     return 0;
 }
 
-// Recursive function to calculate factorial
+// Iterative function to calculate factorial
 long long calculateFactorial(int num) {
-    if (num <= 1) {
-        return 1;
-    } else {
-        return num * calculateFactorial(num - 1);
+    long long result = 1;
+
+    while (num > 1) {
+        result *= num;
+        num--;
     }
+
+    return result;
 }
