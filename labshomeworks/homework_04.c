@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <limits.h>
 
 // Function prototypes
 long long calculateFactorial(int num);
@@ -22,11 +21,11 @@ int main() {
     if (dataType == 'c') {
         printf("Factorial: %hhd\n", (char)result);
     } else if (dataType == 'i') {
-        if (result <= INT_MAX && result >= INT_MIN) {
-            printf("Factorial: %lld\n", result);
-        } else {
-            printf("Invalid data type selected.\n");
-        }
+    if (result <= ((unsigned int)-1) / 2) {
+        printf("Factorial: %d\n", (int)result);
+    } else {
+        printf("Result exceeds the limits of int data type.\n");
+    }
     } else if (dataType == 'l') {
         printf("Factorial: %lld\n", result);
     } else {
