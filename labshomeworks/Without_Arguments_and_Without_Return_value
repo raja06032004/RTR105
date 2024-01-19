@@ -2,7 +2,7 @@
 
 // Function without arguments and without return
 void greetUser() {
-    printf("Hello! Welcome to the program.\n");
+    printf("Hello! I AM RAJA\n");
 }
 
 int main() {
