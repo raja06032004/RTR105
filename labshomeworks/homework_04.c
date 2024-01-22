@@ -1,48 +1,49 @@
 #include <stdio.h>
 
-// Function prototypes
-long long calculateFactorial(int num);
+int main()
+{
+    int n, i, n1;
+    long long int f;
 
-int main() {
-    // Get user input for decimal number
-    int decimalNum;
-    printf("Enter a decimal number: ");
-    scanf("%d", &decimalNum);
+    printf("Enter a Number to Find Factorial: ");
+    scanf("%d", &n);
 
-    // Get user input for data type
-    char dataType;
-    printf("Choose data type (c for char, i for int, l for long long): ");
-    scanf(" %c", &dataType);
+    printf("Data types you can use \n[char=>Press(1)]\n[int=>Press(2)]\n[long long int=>Press(3)]\n ");
+    printf("Enter data type need to use = ");
+    scanf("%d", &n1);
 
-    // Calculate and display factorial
-    long long result = calculateFactorial(decimalNum);
+    f = i = 1;
 
-    // Display the result based on the selected data type
-    if (dataType == 'c') {
-        printf("Factorial: %hhd\n", (char)result);
-    } else if (dataType == 'i') {
-    if (result <= ((unsigned int)-1) / 2) {
-        printf("Factorial: %d\n", (int)result);
-    } else {
-        printf("Result exceeds the limits of int data type.\n");
+    while (i <= n)
+    {
+        f *= i;
+        i++;
     }
-    } else if (dataType == 'l') {
-        printf("Factorial: %lld\n", result);
-    } else {
-        printf("Invalid data type selected.\n");
+
+    switch (n1)
+    {
+        case 1:
+        if (f < 100)
+            printf("The Factorial of %d is : %lld", n, f);
+        else
+            printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
+        break;
+
+        case 2:
+        if (n < 15)
+            printf("The Factorial of %d is : %lld", n, f);
+        else
+            printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
+        break;
+
+        case 3:
+        printf("The Factorial of %d is : %lld", n, f);
+        break;
+
+    default:
+        printf("Invalid choice for data type.\n");
+        break;
     }
 
     return 0;
-}
-
-// Iterative function to calculate factorial
-long long calculateFactorial(int num) {
-    long long result = 1;
-
-    while (num > 1) {
-        result *= num;
-        num--;
-    }
-
-    return result;
 }
