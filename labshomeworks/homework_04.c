@@ -1,49 +1,47 @@
 #include <stdio.h>
 
-int main()
-{
-    int n, i, n1;
-    long long int f;
+long long calculateFactorial(int num) {
+    long long result = 1;
+    for (int I = 1; I <= num; ++I) {
+        result *= I;
+    }
+    return result;
+}
 
-    printf("Enter a Number to Find Factorial: ");
-    scanf("%d", &n);
+void printResult(long long result, long long input_num, char data_type) {
+    printf("Factorial of Number %lld! = %lld (Using %c)\n", input_num, result, data_type);
+}
 
-    printf("Data types you can use \n[char=>Press(1)]\n[int=>Press(2)]\n[long long int=>Press(3)]\n ");
-    printf("Enter data type need to use = ");
-    scanf("%d", &n1);
+int main() {
+    long long input_num;
+    char choice;
 
-    f = i = 1;
+    printf("Please Enter Decimal Number: ");
+    scanf("%lld", &input_num);
 
-    while (i <= n)
-    {
-        f *= i;
-        i++;
+    printf("Please Enter first letter of Data type (c) (i) (l): ");
+    scanf(" %c", &choice);
+
+    long long result = 1;
+    long long temp_result = 1;
+
+    for (int I = 1; I <= input_num; ++I) {
+        temp_result *= I;
+
+        if (temp_result / I != result) {
+            printf("Selected Data type is too large to store number %lld\n", input_num);
+            return 1;  // Return an error code
+        }
+
+        result = temp_result;
     }
 
-    switch (n1)
-    {
-        case 1:
-        if (f < 100)
-            printf("The Factorial of %d is : %lld", n, f);
-        else
-            printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
-        break;
-
-        case 2:
-        if (n < 15)
-            printf("The Factorial of %d is : %lld", n, f);
-        else
-            printf("Factorial value of the input integer cannot be calculated using the chosen data type.\n");
-        break;
-
-        case 3:
-        printf("The Factorial of %d is : %lld", n, f);
-        break;
-
-    default:
-        printf("Invalid choice for data type.\n");
-        break;
+    if (choice == 'c' || choice == 'i' || choice == 'l') {
+        printResult(result, input_num, choice);
+    } else {
+        printf("Invalid choice. Please enter 'c', 'i', or 'l'.\n");
+        return 1;  // Return an error code
     }
 
-    return 0;
+    return 0;  // Indicates successful execution
 }
