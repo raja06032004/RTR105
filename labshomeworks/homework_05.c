@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 long long calculateFactorial(int num) {
-    if (num == 0 || num == 1) {
-        return 1;
-    } else {
-        return num * calculateFactorial(num - 1);
+    long long result = 1;
+    for (int I = 1; I <= num; ++I) {
+        result *= I;
     }
+    return result;
 }
 
-void printFactorial(long long result, long long input_num, char data_type) {
+void printResult(long long result, long long input_num, char data_type) {
     printf("Factorial of Number %lld! = %lld (Using %c)\n", input_num, result, data_type);
 }
 
@@ -22,13 +22,23 @@ int main() {
     printf("Please Enter first letter of Data type (c) (i) (l): ");
     scanf(" %c", &choice);
 
-    if (choice == 'c' || choice == 'i' || choice == 'l') {
-        long long result = calculateFactorial(input_num);
-        printFactorial(result, input_num, choice);
-    } else {
-        printf("Invalid choice. Please enter 'c', 'i', or 'l'.\n");
-        return 1;  
+    long long result = 1;
+
+    for (int I = 1; I <= input_num; ++I) {
+        result *= I;
+
+        if (result / I != result) {
+            printf("Selected Data type is too large to store number %lld\n", input_num);
+            return 1;  // Return an error code
+        }
     }
 
-    return 0; 
+    if (choice == 'c' || choice == 'i' || choice == 'l') {
+        printResult(result, input_num, choice);
+    } else {
+        printf("Invalid choice. Please enter 'c', 'i', or 'l'.\n");
+        return 1;  // Return an error code
+    }
+
+    return 0;  // Indicates successful execution
 }
