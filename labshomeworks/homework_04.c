@@ -2,8 +2,10 @@
 
 long long calculateFactorial(int num) {
     long long result = 1;
-    for (int I = 1; I <= num; ++I) {
+    int I = 1;
+    while (I <= num) {
         result *= I;
+        I++;
     }
     return result;
 }
@@ -24,8 +26,9 @@ int main() {
 
     long long result = 1;
     long long temp_result = 1;
+    int I = 1;
 
-    for (int I = 1; I <= input_num; ++I) {
+    while (I <= input_num) {
         temp_result *= I;
 
         if (temp_result / I != result) {
@@ -34,6 +37,7 @@ int main() {
         }
 
         result = temp_result;
+        I++;
     }
 
     if (choice == 'c' || choice == 'i' || choice == 'l') {
