@@ -1,62 +1,34 @@
 #include <stdio.h>
-#include <limits.h>
-void calculateFactorial(char dataType, double number) {
-    char charResult = 1;
-    int intResult = 1;
-    long long longLongResult = 1;
 
-    switch (dataType) {
-    case 'c':
-    for (int i = 1; i <= number; ++i) {
-        charResult *= i;
-    if (charResult == 0) {
-    printf("Factorial value exceeds range for char data type.\n");
-    return;             
-    }
-     }
-    printf("Factorial of %.0lf using char data type: %d\n", number, charResult);
-    break;
-
-    case 'i':
-    for (int i = 1; i <= number; ++i) {
-    // Check for integer overflow
-    if (intResult > INT_MAX / i) {
-    printf("Factorial value exceeds range for int data type.\n");
-    return;
-                }
-    intResult *= i;
-            }
-printf("Factorial of %.0lf using int data type: %d\n", number, intResult);
-    break;
-
-    case 'l':
-    for (int i = 1; i <= number; ++i) {
-                // Check for long long overflow
-    if (longLongResult > LLONG_MAX / i) {
-        printf("Factorial value exceeds range for long long data type.\n");
-        return;
-    }
-    longLongResult *= i;
-    }
-    printf("Factorial of %.0lf using long long data type: %lld\n", number, longLongResult);
-        break;
-
-        default:
-printf("Invalid data type selected.\n");
+long long calculateFactorial(int num) {
+    if (num == 0 || num == 1) {
+        return 1;
+    } else {
+        return num * calculateFactorial(num - 1);
     }
 }
 
+void printFactorial(long long result, long long input_num, char data_type) {
+    printf("Factorial of Number %lld! = %lld (Using %c)\n", input_num, result, data_type);
+}
+
 int main() {
-    double userInput;
-    char dataType;
+    long long input_num;
+    char choice;
 
-    printf("Enter a decimal number: ");
-    scanf("%lf", &userInput);
+    printf("Please Enter Decimal Number: ");
+    scanf("%lld", &input_num);
 
-    printf("Select data type - char (c), int (i), or long long (l): ");
-    scanf(" %c", &dataType);
+    printf("Please Enter first letter of Data type (c) (i) (l): ");
+    scanf(" %c", &choice);
 
-    calculateFactorial(dataType, userInput);
+    if (choice == 'c' || choice == 'i' || choice == 'l') {
+        long long result = calculateFactorial(input_num);
+        printFactorial(result, input_num, choice);
+    } else {
+        printf("Invalid choice. Please enter 'c', 'i', or 'l'.\n");
+        return 1;  
+    }
 
-    return 0;
+    return 0; 
 }
