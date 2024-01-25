@@ -35,7 +35,7 @@ void calculateCharFactorial(long long num) {
     char reference = 1;
     int counter = 1;
 
-    while (counter < num) {
+    while (counter <= num) {
         charNum *= (counter + 1);
         reference *= counter;
 
@@ -57,7 +57,7 @@ void calculateIntFactorial(long long num) {
     int reference = 1;
     int counter = 1;
 
-    while (counter < num) {
+    while (counter <= num) {
         intNum *= (counter + 1);
         reference *= counter;
 
@@ -79,7 +79,7 @@ void calculateLongFactorial(long long num) {
     long long reference = 1;
     long long counter = 1;
 
-    while (counter < num) {
+    while (counter <= num) {
         longNum *= (counter + 1);
         reference *= counter;
 
