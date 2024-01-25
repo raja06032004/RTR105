@@ -76,22 +76,18 @@ void calculateIntFactorial(long long num) {
 
 void calculateLongFactorial(long long num) {
     long long longNum = 1;
-    long long reference = 1;
     long long counter = 1;
 
     while (counter <= num) {
-        longNum *= (counter + 1);
-        reference *= counter;
-
-        if (longNum / (counter + 1) != reference) {
-            printf("Selected data type is too small to store factorial of number %lld\n", num);
-            break;
-        }
-
+        longNum *= counter;
         counter++;
+
+        if (longNum < 0) {
+            printf("Selected data type is too small to store factorial of number %lld\n", num);
+            return;
+        }
     }
 
-    if (longNum == reference * num) {
-        printf("Factorial of Number %lld! = %lld\n", num, longNum);
-    }
+    printf("Factorial of Number %lld! = %lld\n", num, longNum);
 }
+
