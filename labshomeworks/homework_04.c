@@ -57,7 +57,7 @@ void calculateIntFactorial(long long num) {
     int reference = 1;
     int counter = 1;
 
-    while (counter <= num) {
+    while (counter < num) {
         intNum *= (counter + 1);
         reference *= counter;
 
